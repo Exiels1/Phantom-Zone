@@ -334,7 +334,7 @@ body.shake {
   color: #ff0055;
   text-shadow: 0 0 10px #ff0055;
 }
-..social-links {
+.social-links {
   text-align: center;
   margin-top: 40px;
   padding: 20px;
