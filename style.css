@@ -419,4 +419,22 @@ nav ul.navbar li a {
     padding: 10px 0;
     font-size: 1.2rem;
 }
+header {
+  padding: 10px;
+}
+/* === HEADER STYLES === */
+header {
+background: #1f1f1f;
+padding: 15px 20px;
+}
+nav ul.navbar {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 20px;
+}
+header {
+display: block;
+unicode-bidi: isolate;
+}
 }
