@@ -4,69 +4,43 @@
     <meta charset="UTF-8">
     <title>Exiels1 | Home</title>
     <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="icon" href="image/favicon.ico" sizes="any">
-    <meta name="description" content="Exiels1's Official Site — Dark Visionary & Web Dev in Training. Discover my world of design, projects, and more.">
-    <meta name="keywords" content="Exiels1, Web Dev, Dark Visionary, Projects, Book, Contact">
-    <meta name="author" content="Exiels1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to Exiels1 — Dark Visionary & Web Dev in Training.">
 </head>
-<body>
+<body onload="greetUser()">
 
-<div id="preloader">
-    <div class="loader-content">
-        <img src="image/logo.png" alt="Loading..." class="loader-logo">
-        <p>⚡ Entering Exiels1's World ⚡</p>
-    </div>
-</div>
-
-<header>
-    <nav>
-        <img src="logo1.svg" alt="Exiels1 Logo" class="site-logo">
-        <ul class="navbar">
-            <li><a href="index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
-            <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
-            <li><a href="order.html"><i class="fas fa-calendar-check"></i> Book</a></li>
-            <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
-        </ul>
-    </nav>
-</header>
-
-<main>
-    <section class="hero">
-        <h1>Hello, I'm <span class="highlight">Exiels1 ⚡</span></h1>
-        <h2>Dark Visionary | Web Dev in Training</h2>
-        <p>Welcome to my personal space — I’m building and learning from this site.</p>
-        <button onclick="greetUser()">⚡ Enter My World</button>
-        <button onclick="changeBackground()">Switch Background</button>
-    </section>
-
-    <section class="image-section">
-        <img src="image/exiels1_logo 2.png" alt="My Pic" class="profile-pic">
-    </section>
-
-    <section id="services" class="services-section">
-        <h2>💼 My Services</h2>
-        <div class="services-container">
-            <div class="service-card">
-                <h3>🌐 Web Design</h3>
-                <p>Custom modern websites built to match your vibe and purpose. Responsive, fast, and beautiful.</p>
-            </div>
-            <div class="service-card">
-                <h3>🎨 Logo Design</h3>
-                <p>Unique, anime-inspired or professional logos that represent your brand’s soul and identity.</p>
-            </div>
-            <div class="service-card">
-                <h3>🔧 Website Setup</h3>
-                <p>I’ll help you register a domain, set up hosting, and launch your site with pro configuration.</p>
-            </div>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-content">
+            <img src="image/logo.png" alt="Loading..." class="loader-logo">
+            <p>⚡ Powering up... ⚡</p>
         </div>
-    </section>
-</main>
+    </div>
 
-<footer>
-    <p>&copy; 2025 Exiels1. All rights reserved.</p>
-</footer>
+    <header>
+        <nav>
+            <img src="image/logo1.svg" alt="Exiels1 Logo" class="site-logo">
+            <ul class="navbar">
+                <li><a href="index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="order.html"><i class="fas fa-calendar-check"></i> Book</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="hero">
+        <h1>⚡ Welcome to Exiels1's World ⚡</h1>
+        <p>Dark Visionary. Quiet Storm. Web Dev rising.</p>
+
+        <button onclick="changeBackground()">Switch Mode</button>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Exiels1. All rights reserved.</p>
+    </footer>
 
 <script src="script.js"></script>
 <script>
@@ -77,6 +51,5 @@
         }, 1200);
     });
 </script>
-
 </body>
 </html>
