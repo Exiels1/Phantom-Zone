@@ -511,3 +511,44 @@ body.shake {
       padding: 20px;
   }
 }
+.about-section {
+  max-width: 800px;
+  margin: 60px auto;
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #1a1a1a;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+  color: white;
+}
+
+.about-section h2 {
+  color: #00ffff;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  line-height: 1.7;
+  margin: 15px 0;
+  color: #ccc;
+}
+
+.about-section ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.about-section li {
+  margin: 10px 0;
+  font-weight: bold;
+  color: #00ffff;
+  font-size: 1.1em;
+}
+
+.about-cta {
+  margin-top: 30px;
+  font-size: 1.2em;
+  color: #ff0055;
+}
