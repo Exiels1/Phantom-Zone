@@ -451,4 +451,59 @@ unicode-bidi: isolate;
       margin: 10px 0;
   }
 }
+@media (max-width: 768px) {
+    
+  header {
+      padding: 10px;
+  }
+
+  .navbar {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      background-color: #1a1a1a;
+      padding: 10px 0;
+      border-top: 1px solid #333;
+      border-bottom: 1px solid #333;
+  }
+
+  .navbar li {
+      width: 100%;
+      text-align: center;
+  }
+
+  .navbar li a {
+      display: block;
+      width: 100%;
+      padding: 12px 0;
+      font-size: 18px;
+  }
+
+  .hero, .services-section, .image-section {
+      text-align: center;
+      padding: 20px;
+  }
+
+  .profile-pic {
+      width: 150px;
+      height: auto;
+  }
+
+  .services-container {
+      grid-template-columns: 1fr;
+      padding: 0 10px;
+  }
+
+  .service-card {
+      width: 90%;
+      margin-bottom: 20px;
+  }
+
+  button {
+      width: 100%;
+      padding: 14px;
+      font-size: 1em;
+  }
+}
 
