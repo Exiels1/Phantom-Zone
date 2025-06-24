@@ -442,3 +442,13 @@ unicode-bidi: isolate;
   height: 40px;
   margin-right: 15px;
 }
+@media (max-width: 600px) {
+  .navbar {
+      flex-direction: column;
+      align-items: center;
+  }
+  .navbar li {
+      margin: 10px 0;
+  }
+}
+
