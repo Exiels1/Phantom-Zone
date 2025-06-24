@@ -438,3 +438,7 @@ display: block;
 unicode-bidi: isolate;
 }
 }
+.site-logo {
+  height: 40px;
+  margin-right: 15px;
+}
