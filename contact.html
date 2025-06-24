@@ -12,6 +12,7 @@
     <meta name="author" content="Exiels1">
 </head>
 <body>
+
     <!-- Preloader -->
     <div id="preloader">
         <div class="loader-content">
@@ -22,7 +23,7 @@
 
     <header>
         <nav>
-          <img src="logo1.svg" alt="Exiels1 Logo" class="site-logo">
+            <img src="logo1.svg" alt="Exiels1 Logo" class="site-logo">
             <ul class="navbar">
                 <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
                 <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
@@ -32,23 +33,24 @@
         </nav>
     </header>
 
-    <main class="hero">
-        <h1>📞 Contact Exiels1</h1>
+    <main class="contact-section">
+        <h1>📞 Contact <span class="highlight">Exiels1</span></h1>
+        <p class="contact-intro">Questions? Projects? Just want to vibe? Reach out below.</p>
 
-        <form action="https://submit-form.com/OmWGrPUCa" method="POST" class="booking-form">
+        <form action="https://submit-form.com/OmWGrPUCa" method="POST" class="contact-form">
             <input type="hidden" name="_redirect" value="https://phantom-zone1.netlify.app/thankyou.html">
             <input type="hidden" name="_subject" value="New Message from Contact Page">
-            
+
             <label for="name">Name:</label>
             <input type="text" name="name" id="name" placeholder="Your Name" required>
-            
+
             <label for="email">Email:</label>
             <input type="email" name="email" id="email" placeholder="Your Email" required>
-            
+
             <label for="message">Your Message:</label>
             <textarea name="message" id="message" placeholder="Type something..." required></textarea>
 
-            <button type="submit">Send Message</button>
+            <button type="submit" class="btn-primary">Send Message</button>
         </form>
 
         <div class="social-links">
@@ -70,12 +72,13 @@
     </footer>
 
     <script>
-      window.addEventListener("load", function() {
-          setTimeout(() => {
-              document.getElementById("preloader").style.opacity = "0";
-              setTimeout(() => document.getElementById("preloader").style.display = "none", 500);
-          }, 1200);
-      });
-  </script>
+        window.addEventListener("load", function() {
+            setTimeout(() => {
+                document.getElementById("preloader").style.opacity = "0";
+                setTimeout(() => document.getElementById("preloader").style.display = "none", 500);
+            }, 1200);
+        });
+    </script>
+
 </body>
 </html>
