@@ -516,3 +516,146 @@ button, .contact-section button, .booking-form button {
   0%, 100% { opacity: 0.5; transform: scale(1); }
   50% { opacity: 1; transform: scale(1.1); }
 }
+/* === HOME PAGE EXIELS VIBE === */
+.home-body {
+  position: relative;
+  overflow-x: hidden;
+}
+
+.home-body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #0ef 0%, #121212 50%, #ff0055 100%);
+  opacity: 0.08;
+  background-size: 400% 400%;
+  animation: pulseBackground 15s ease infinite;
+  z-index: -1;
+}
+
+/* HERO SECTION ENHANCED */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 2.8em;
+  text-shadow: 0 0 15px #00ccff, 0 0 30px #00ccff;
+  margin-bottom: 20px;
+}
+
+.hero .highlight {
+  font-size: 1.2em;
+  color: #ff0055;
+  margin-bottom: 30px;
+  display: block;
+}
+
+/* FEATURES SECTION */
+.features-section {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.feature-card {
+  background: rgba(20, 20, 20, 0.85);
+  border: 1px solid #0ef;
+  border-radius: 10px;
+  padding: 25px;
+  width: 260px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+  transition: 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px #0ef;
+}
+
+.feature-card i {
+  font-size: 2.5rem;
+  color: #0ef;
+  margin-bottom: 15px;
+}
+
+.feature-card h3 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  color: #ccc;
+  font-size: 0.95em;
+}
+
+/* CTA SECTION */
+.cta-section {
+  text-align: center;
+  margin: 60px 20px;
+}
+
+.cta-section p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #ccc;
+}
+
+.cta-section button {
+  background: #ff0055;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cta-section button:hover {
+  background: #0ef;
+  color: #000;
+  box-shadow: 0 0 10px #0ef;
+}
+
+/* ANIMATIONS */
+@keyframes pulseBackground {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .features-section {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .feature-card {
+      width: 90%;
+      margin-bottom: 20px;
+  }
+}
