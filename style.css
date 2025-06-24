@@ -426,3 +426,17 @@ body.shake {
   background-color: #ff0055;
   color: #fff;
 }
+.booking-section, .contact-section {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 40px;
+  background-color: #1a1a1a;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+  text-align: center;
+}
+
+.booking-section h1, .contact-section h1 {
+  color: #00ffff;
+  margin-bottom: 20px;
+}
