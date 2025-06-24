@@ -590,3 +590,124 @@ body.shake {
   color: #ccc;
   font-size: 0.95rem;
 }
+/* General About Section */
+.about-section {
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 20px;
+  background: rgba(20, 20, 20, 0.85);
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.2);
+  text-align: center;
+}
+
+.about-section h2, 
+.about-section h3 {
+  color: #0ef; 
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.about-section p {
+  line-height: 1.7;
+  margin: 15px 0;
+}
+
+/* Skill Cards */
+.skills-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 30px 0;
+}
+
+.skill-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #0ef;
+  border-radius: 8px;
+  padding: 20px;
+  width: 180px;
+  text-align: center;
+  transition: 0.3s;
+  backdrop-filter: blur(8px);
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px #0ef;
+}
+
+.skill-card i {
+  font-size: 36px;
+  color: #0ef;
+  margin-bottom: 10px;
+}
+
+.skill-card h3 {
+  margin: 10px 0;
+  color: #fff;
+}
+
+.skill-card p {
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* List Style */
+.about-section ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.about-section ul li {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+/* Quotes */
+.about-section blockquote {
+  background: rgba(0, 255, 255, 0.1);
+  border-left: 4px solid #0ef;
+  margin: 20px 0;
+  padding: 15px;
+  font-style: italic;
+  color: #ccc;
+  position: relative;
+  text-align: left;
+}
+
+.about-section blockquote::before {
+  content: "❝";
+  font-size: 24px;
+  color: #0ef;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+.about-section blockquote strong {
+  color: #fff;
+}
+
+/* Call to Action */
+.about-cta {
+  margin-top: 30px;
+  font-size: 18px;
+  color: #0ef;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .skills-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .skill-card {
+      width: 80%;
+  }
+}
