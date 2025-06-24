@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Welcome to Exiels1 — Dark Visionary & Web Dev in Training.">
 </head>
-<body onload="greetUser()">
+<body class="home-body" onload="greetUser()">
 
     <!-- Preloader -->
     <div id="preloader">
@@ -31,11 +31,35 @@
         </nav>
     </header>
 
-    <main class="hero">
-        <h1>⚡ Welcome to Exiels1's World ⚡</h1>
-        <p>Dark Visionary. Quiet Storm. Web Dev rising.</p>
+    <main>
+        <section class="hero">
+            <h1>⚡ Welcome to Exiels1's Dominion ⚡</h1>
+            <p class="highlight">Not a portfolio... a digital rebellion.</p>
+            <button onclick="changeBackground()">Switch Mode</button>
+        </section>
 
-        <button onclick="changeBackground()">Switch Mode</button>
+        <section class="features-section fade-in">
+            <div class="feature-card">
+                <i class="fas fa-code"></i>
+                <h3>Web Dev in Progress</h3>
+                <p>Learning. Building. Breaking limits.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-bolt"></i>
+                <h3>Dark Visionary</h3>
+                <p>Design fused with strategy and raw energy.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-skull"></i>
+                <h3>Anti-Hero Energy</h3>
+                <p>Not defined by rules. Only results.</p>
+            </div>
+        </section>
+
+        <section class="cta-section fade-in">
+            <p>⚠️ This isn’t your regular site. It's Exiels1 — raw, real, relentless.</p>
+            <button onclick="location.href='about.html'">Explore More</button>
+        </section>
     </main>
 
     <footer>
@@ -53,3 +77,4 @@
 </script>
 </body>
 </html>
+    
