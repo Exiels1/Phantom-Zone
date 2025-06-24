@@ -11,72 +11,72 @@
     <meta name="keywords" content="Exiels1, Web Dev, Dark Visionary, Projects, Book, Contact">
     <meta name="author" content="Exiels1">
 </head>
-
 <body>
-    <!-- Preloader -->
-    <div id="preloader">
-        <div class="loader-content">
-            <img src="image/logo.png" alt="Loading..." class="loader-logo">
-            <p>⚡ Entering Exiels1's World ⚡</p>
-        </div>
+
+<div id="preloader">
+    <div class="loader-content">
+        <img src="image/logo.png" alt="Loading..." class="loader-logo">
+        <p>⚡ Entering Exiels1's World ⚡</p>
     </div>
+</div>
 
-    <header>
-        <nav>
-            <img src="logo1.svg" alt="Exiels1 Logo" class="site-logo">
-            <ul class="navbar">
-                <li><a href="index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
-                <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
-                <li><a href="order.html"><i class="fas fa-calendar-check"></i> Book</a></li>
-                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<header>
+    <nav>
+        <img src="image/logo1.svg" alt="Exiels1 Logo" class="site-logo">
+        <ul class="navbar">
+            <li><a href="index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+            <li><a href="order.html"><i class="fas fa-calendar-check"></i> Book</a></li>
+            <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <main>
-        <section class="hero">
-            <h1>Hello, I'm <span class="highlight">Exiels1 ⚡</span></h1>
-            <h2>Dark Visionary | Web Dev in Training</h2>
-            <p>Welcome to my personal space — I’m building and learning from this site.</p>
-            <button onclick="greetUser()">⚡ Enter My World</button>
-            <button onclick="changeBackground()">Switch Background</button>
-        </section>
+<main>
+    <section class="hero">
+        <h1>Hello, I'm <span class="highlight">Exiels1 ⚡</span></h1>
+        <h2>Dark Visionary | Web Dev in Training</h2>
+        <p>Welcome to my personal space — I’m building and learning from this site.</p>
+        <button onclick="greetUser()">⚡ Enter My World</button>
+        <button onclick="changeBackground()">Switch Background</button>
+    </section>
 
-        <section class="image-section">
-            <img src="image/exiels1_logo 2.png" alt="My Pic" class="profile-pic">
-        </section>
+    <section class="image-section">
+        <img src="image/exiels1_logo 2.png" alt="My Pic" class="profile-pic">
+    </section>
 
-        <section id="services" class="services-section">
-            <h2>💼 My Services</h2>
-            <div class="services-container">
-                <div class="service-card">
-                    <h3>🌐 Web Design</h3>
-                    <p>Custom modern websites built to match your vibe and purpose. Responsive, fast, and beautiful.</p>
-                </div>
-                <div class="service-card">
-                    <h3>🎨 Logo Design</h3>
-                    <p>Unique, anime-inspired or professional logos that represent your brand’s soul and identity.</p>
-                </div>
-                <div class="service-card">
-                    <h3>🔧 Website Setup</h3>
-                    <p>I’ll help you register a domain, set up hosting, and launch your site with pro configuration.</p>
-                </div>
+    <section id="services" class="services-section">
+        <h2>💼 My Services</h2>
+        <div class="services-container">
+            <div class="service-card">
+                <h3>🌐 Web Design</h3>
+                <p>Custom modern websites built to match your vibe and purpose. Responsive, fast, and beautiful.</p>
             </div>
-        </section>
-    </main>
+            <div class="service-card">
+                <h3>🎨 Logo Design</h3>
+                <p>Unique, anime-inspired or professional logos that represent your brand’s soul and identity.</p>
+            </div>
+            <div class="service-card">
+                <h3>🔧 Website Setup</h3>
+                <p>I’ll help you register a domain, set up hosting, and launch your site with pro configuration.</p>
+            </div>
+        </div>
+    </section>
+</main>
 
-    <footer>
-        <p>&copy; 2025 Exiels1. All rights reserved.</p>
-    </footer>
+<footer>
+    <p>&copy; 2025 Exiels1. All rights reserved.</p>
+</footer>
 
-    <script src="script.js"></script>
-    <script>
-        window.addEventListener("load", function() {
-            setTimeout(function() {
-                document.getElementById("preloader").classList.add("hidden");
-            }, 4000);
-        });
-    </script>
-    
+<script src="script.js"></script>
+<script>
+    window.addEventListener("load", function() {
+        setTimeout(() => {
+            document.getElementById("preloader").style.opacity = "0";
+            setTimeout(() => document.getElementById("preloader").style.display = "none", 500);
+        }, 4000);
+    });
+</script>
+
 </body>
 </html>

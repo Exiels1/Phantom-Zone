@@ -5,13 +5,23 @@
     <title>Contact | Exiels1</title>
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="icon" href="image/favicon.ico" sizes="any">
+    <meta name="description" content="Exiels1's Official Site — Contact me for collaborations or enquiries.">
+    <meta name="author" content="Exiels1">
 </head>
 <body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-content">
+            <img src="image/logo.png" alt="Loading..." class="loader-logo">
+            <p>⚡ Connecting You to Exiels1 ⚡</p>
+        </div>
+    </div>
+
     <header>
         <nav>
-          <img src="logo1.svg" alt="Exiels1 Logo" class="site-logo">
             <ul class="navbar">
                 <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
                 <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
@@ -22,36 +32,51 @@
     </header>
 
     <main class="hero">
-        <section class="contact-section">
-            <h1>📞 Contact Exiels1</h1>
+        <h1>📞 Contact Exiels1</h1>
 
-            <form class="booking-form" action="https://submit-form.com/OmWGrPUCa" method="POST">
-                <input type="hidden" name="_redirect" value="https://serene-halva-16d69d.netlify.app/thankyou.html">
-                <input type="hidden" name="_subject" value="New Message from Contact Page">
+        <form action="https://submit-form.com/OmWGrPUCa" method="POST" class="booking-form">
+            <input type="hidden" name="_redirect" value="https://phantom-zone1.netlify.app/thankyou.html">
+            <input type="hidden" name="_subject" value="New Message from Contact Page">
 
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Your Name" required>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Your Email" required>
 
-                <label for="message">Your Message:</label>
-                <textarea id="message" name="message" placeholder="Type something..." required></textarea>
+            <label for="message">Your Message:</label>
+            <textarea name="message" id="message" placeholder="Type something..." required></textarea>
 
-                <button type="submit">Send Message</button>
-            </form>
+            <button type="submit">Send Message</button>
+        </form>
 
-            <div class="social-links">
-                <h2>🌐 Find Me</h2>
-                <a href="https://tiktok.com/@3xiels1" target="_blank"><i class="fab fa-tiktok"></i> @3xiels1</a>
-                <a href="https://wa.me/2347016300834" target="_blank"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
-                <a href="mailto:oliveisfruitful@gmail.com"><i class="fas fa-envelope"></i> Email Me</a>
-            </div>
-        </section>
+        <div class="social-links">
+            <h2>🌐 Find Me</h2>
+
+            <a href="https://tiktok.com/@3xiels1" target="_blank">
+                <i class="fab fa-tiktok"></i> @3xiels1
+            </a>
+
+            <a href="https://wa.me/2347016300834" target="_blank">
+                <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+            </a>
+
+            <a href="mailto:oliveisfruitful@gmail.com">
+                <i class="fas fa-envelope"></i> Email Me
+            </a>
+        </div>
     </main>
 
     <footer>
         <p>&copy; 2025 Exiels1. All rights reserved.</p>
     </footer>
+
+    <script>
+        window.addEventListener("load", function() {
+            setTimeout(() => {
+                document.getElementById("preloader").style.display = "none";
+            }, 3000); // 3-second preloader
+        });
+    </script>
 </body>
 </html>
