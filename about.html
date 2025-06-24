@@ -51,4 +51,12 @@
         <p>&copy; 2025 Exiels1. All rights reserved.</p>
     </footer>
 </body>
+<script>
+  window.addEventListener("load", function() {
+      setTimeout(() => {
+          document.getElementById("preloader").style.opacity = "0";
+          setTimeout(() => document.getElementById("preloader").style.display = "none", 500);
+      }, 4000);
+  });
+</script>
 </html>

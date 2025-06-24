@@ -69,9 +69,12 @@
     </footer>
 
     <script>
-        window.addEventListener("load", () => {
-            document.getElementById("preloader").style.display = "none";
-        });
-    </script>
+      window.addEventListener("load", function() {
+          setTimeout(() => {
+              document.getElementById("preloader").style.opacity = "0";
+              setTimeout(() => document.getElementById("preloader").style.display = "none", 500);
+          }, 4000);
+      });
+  </script>
 </body>
 </html>
