@@ -6,21 +6,28 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="icon" href="image/favicon.ico" sizes="any">
-    <img src="logo1.svg" alt="Logo">
     <meta name="description" content="Exiels1's Official Site — Dark Visionary & Web Dev in Training. Discover my world of design, projects, and more.">
     <meta name="keywords" content="Exiels1, Web Dev, Dark Visionary, Projects, Book, Contact">
     <meta name="author" content="Exiels1">
 </head>
 <body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-content">
+            <img src="image/logo.png" alt="Loading..." class="loader-logo">
+            <p>⚡ Entering Exiels1's World ⚡</p>
+        </div>
+    </div>
+
     <header>
         <nav>
           <ul class="navbar">
-            <li><a href="index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
-            <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="about.html" class="active"><i class="fas fa-user"></i> About</a></li>
             <li><a href="order.html"><i class="fas fa-calendar-check"></i> Book</a></li>
             <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
         </ul>
-        
         </nav>
     </header>
 
@@ -29,16 +36,16 @@
             <h2>⚡ Who is Exiels1?</h2>
             <p>
              I’m a <strong>Dark Visionary</strong> shaping the web my own way.  
-              This isn't a school project. It’s the rise of a digital storm.
+             This isn't a school project. It’s the rise of a digital storm.
             </p>
             <p>
               I'm currently mastering:
-              <ul>
+            </p>
+            <ul>
                 <li>🧱 HTML – the foundation of every empire</li>
                 <li>🎨 CSS – where design becomes identity</li>
                 <li>⚙️ JavaScript – breathing life into the static</li>
-              </ul>
-            </p>
+            </ul>
             <p>
               Every line of code I write carves out a legacy.  
               This page? It's just the beginning.
@@ -46,11 +53,18 @@
             <p>
               <strong>Welcome to Exiels1’s world — raw, real, and relentlessly rising.</strong>
             </p>
-          </section>          
+        </section>          
     </main>
 
     <footer>
         <p>&copy; 2025 Exiels1. All rights reserved.</p>
     </footer>
+
+    <script>
+        window.addEventListener("load", function() {
+            document.getElementById("preloader").style.display = "none";
+        });
+    </script>
+
 </body>
 </html>

@@ -7,30 +7,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="icon" href="image/favicon.ico" sizes="any">
-    <img src="logo1.svg" alt="Logo">
     <meta name="description" content="Exiels1's Official Site — Dark Visionary & Web Dev in Training. Discover my world of design, projects, and more.">
     <meta name="keywords" content="Exiels1, Web Dev, Dark Visionary, Projects, Book, Contact">
     <meta name="author" content="Exiels1">
 </head>
+
 <body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-content">
+            <img src="image/logo.png" alt="Loading..." class="loader-logo">
+            <p>⚡ Entering Exiels1's World ⚡</p>
+        </div>
+    </div>
+
     <header>
         <nav>
             <ul class="navbar">
-                <li><a href="index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
                 <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
-                <li><a href="order.html"><i class="fas fa-calendar-check"></i> Book</a></li>
+                <li><a href="order.html" class="active"><i class="fas fa-calendar-check"></i> Book</a></li>
                 <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
             </ul>
-            
         </nav>
     </header>
 
     <main class="hero">
         <h1>📦 Book Your Order</h1>
 
-        <!-- 🚀 STYLED FORM START -->
         <form class="booking-form" action="https://submit-form.com/OmWGrPUCa" method="POST">
-            <!-- Hidden settings -->
             <input type="hidden" name="_redirect" value="https://serene-halva-16d69d.netlify.app/thankyou.html">
             <input type="hidden" name="_subject" value="New Order from Phantom Zone Website">
 
@@ -55,11 +60,16 @@
 
             <button type="submit">Submit Order</button>
         </form>
-        <!-- 🚀 STYLED FORM END -->
     </main>
 
     <footer>
         <p>&copy; 2025 Exiels1 Orders. All rights reserved.</p>
     </footer>
+
+    <script>
+        window.addEventListener("load", function() {
+            document.getElementById("preloader").style.display = "none";
+        });
+    </script>
 </body>
 </html>
