@@ -71,8 +71,11 @@
     <script src="script.js"></script>
     <script>
         window.addEventListener("load", function() {
-            document.getElementById("preloader").style.display = "none";
+            setTimeout(function() {
+                document.getElementById("preloader").classList.add("hidden");
+            }, 4000);
         });
     </script>
+    
 </body>
 </html>

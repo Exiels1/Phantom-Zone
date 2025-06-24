@@ -60,11 +60,13 @@
         <p>&copy; 2025 Exiels1. All rights reserved.</p>
     </footer>
 
-    <script>
-        window.addEventListener("load", function() {
-            document.getElementById("preloader").style.display = "none";
-        });
-    </script>
+    <<script>
+      window.addEventListener("load", function() {
+          setTimeout(function() {
+              document.getElementById("preloader").classList.add("hidden");
+          }, 4000);
+      });
+  </script>  
 
 </body>
 </html>
