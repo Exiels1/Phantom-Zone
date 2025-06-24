@@ -11,6 +11,15 @@
     <meta name="author" content="Exiels1">
 </head>
 <body>
+
+    <!-- Preloader (already in your CSS, works fine) -->
+    <div id="preloader">
+        <div class="loader-content">
+            <img src="image/logo.png" alt="Loading..." class="loader-logo">
+            <p>⚡ Entering Exiels1's World ⚡</p>
+        </div>
+    </div>
+
     <header>
         <nav>
             <img src="logo1.svg" alt="Exiels1 Logo" class="site-logo">
@@ -31,13 +40,25 @@
                 This isn't a school project — it's the rise of a digital storm.
             </p>
 
-            <ul>
-                <li>🧱 <strong>HTML</strong> — The foundation of every empire</li>
-                <li>🎨 <strong>CSS</strong> — Where design becomes identity</li>
-                <li>⚙️ <strong>JavaScript</strong> — Breathing life into the static</li>
-            </ul>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <i class="fas fa-code"></i>
+                    <h3>HTML</h3>
+                    <p>The foundation of every empire</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>CSS</h3>
+                    <p>Where design becomes identity</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-bolt"></i>
+                    <h3>JavaScript</h3>
+                    <p>Breathing life into the static</p>
+                </div>
+            </div>
 
-            <p>
+            <p class="about-cta">
                 Every line of code I write carves out a legacy.  
                 This page? It’s just the beginning.
             </p>
@@ -51,13 +72,14 @@
     <footer>
         <p>&copy; 2025 Exiels1. All rights reserved.</p>
     </footer>
-</body>
+
 <script>
-  window.addEventListener("load", function() {
-      setTimeout(() => {
-          document.getElementById("preloader").style.opacity = "0";
-          setTimeout(() => document.getElementById("preloader").style.display = "none", 500);
-      }, 1200);
-  });
+    window.addEventListener("load", function() {
+        setTimeout(() => {
+            document.getElementById("preloader").style.opacity = "0";
+            setTimeout(() => document.getElementById("preloader").style.display = "none", 500);
+        }, 1200);
+    });
 </script>
+</body>
 </html>
