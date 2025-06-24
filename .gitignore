@@ -1,0 +1,29 @@
+# Ignore system junk
+.DS_Store
+Thumbs.db
+
+# Ignore node modules (if you ever use npm)
+node_modules/
+
+# Python cache (if you generate icons or SVGs with Python)
+__pycache__/
+
+# Ignore build or dist folders (if you use them later)
+dist/
+build/
+
+# Ignore editor settings
+.vscode/
+
+# Ignore large or unnecessary files
+*.zip
+*.exe
+*.mp4
+*.mov
+*.psd
+*.ai
+*.sketch
+
+
+# Ignore log files
+*.log
