@@ -659,3 +659,8 @@ button, .contact-section button, .booking-form button {
       margin-bottom: 20px;
   }
 }
+.fade-in-visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: 1s ease;
+}

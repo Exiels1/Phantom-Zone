@@ -32,12 +32,33 @@
     </header>
 
     <main>
-        <section class="hero">
+        <section class="hero fade-in">
             <h1>⚡ Welcome to Exiels1's Room ⚡</h1>
             <p class="highlight">Not a portfolio... a digital rebellion.</p>
             <button onclick="changeBackground()">Switch Mode</button>
         </section>
-
+        <section class="features-section fade-in">
+            <div class="feature-card">
+                <i class="fas fa-bolt"></i>
+                <h3>Fast & Bold</h3>
+                <p>Quick, loud, unapologetic — just like my work.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-mask"></i>
+                <h3>Dark Aesthetic</h3>
+                <p>Design that whispers chaos and vision beneath the surface.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-code"></i>
+                <h3>Built with Code</h3>
+                <p>Raw, hand-written, every line made to reflect me.</p>
+            </div>
+        </section>
+        <section class="cta-section fade-in">
+            <p>Ready to see what Exiels1 can build? The storm's just starting.</p>
+            <button onclick="window.location.href='about.html'">Discover More</button>
+        </section>
+        
         <section class="features-section fade-in">
             <div class="feature-card">
                 <i class="fas fa-code"></i>
@@ -74,6 +95,15 @@
             setTimeout(() => document.getElementById("preloader").style.display = "none", 500);
         }, 1200);
     });
+        window.addEventListener('scroll', () => {
+            document.querySelectorAll('.fade-in').forEach(el => {
+                const top = el.getBoundingClientRect().top;
+                if (top < window.innerHeight - 50) {
+                    el.classList.add('fade-in-visible');
+                }
+            });
+        });
+        
 </script>
 </body>
 </html>

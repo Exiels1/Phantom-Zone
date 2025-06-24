@@ -33,7 +33,7 @@
     </header>
 
     <main>
-      <section class="about-section">
+      <section class="about-section fade-in">
           <h2>⚡ Who is Exiels1?</h2>
           <p>
               I’m a <strong>Dark Visionary</strong> shaping the web my own way.  
@@ -124,6 +124,14 @@
             setTimeout(() => document.getElementById("preloader").style.display = "none", 500);
         }, 1200);
     });
+    window.addEventListener('scroll', () => {
+      document.querySelectorAll('.fade-in').forEach(el => {
+          const top = el.getBoundingClientRect().top;
+          if (top < window.innerHeight - 50) {
+              el.classList.add('fade-in-visible');
+          }
+      });
+  });
 </script>
 </body>
 </html>

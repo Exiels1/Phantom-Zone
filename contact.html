@@ -33,7 +33,7 @@
         </nav>
     </header>
 
-    <main class="contact-section">
+    <main class="contact-section fade-in">
         <h1>📞 Contact <span class="highlight">Exiels1</span></h1>
         <p class="contact-intro">Questions? Projects? Just want to vibe? Reach out below.</p>
 
@@ -78,6 +78,14 @@
                 setTimeout(() => document.getElementById("preloader").style.display = "none", 500);
             }, 1200);
         });
+        window.addEventListener('scroll', () => {
+          document.querySelectorAll('.fade-in').forEach(el => {
+              const top = el.getBoundingClientRect().top;
+              if (top < window.innerHeight - 50) {
+                  el.classList.add('fade-in-visible');
+              }
+          });
+      });
     </script>
 
 </body>
