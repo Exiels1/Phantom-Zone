@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Exiels1 | Home</title>
+    <title>Phantom Zone | Home</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="image/favicon.ico" sizes="any">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to Exiels1 — Dark Visionary & Web Dev in Training.">
+    <meta name="description" content="Welcome to the Phantom Zone — Bold Web Development and Design Solutions.">
 </head>
 <body class="home-body" onload="greetUser()">
 
@@ -21,7 +21,7 @@
 
     <header>
         <nav>
-            <img src="logo1.svg" alt="Exiels1 Logo" class="site-logo">
+            <img src="logo1.svg" alt="Phantom Zone Logo" class="site-logo">
             <ul class="navbar">
                 <li><a href="index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
                 <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
@@ -34,57 +34,59 @@
     <main>
         <section class="hero fade-in">
             <h1 class="zoom-title">⚡ Welcome to the Phantom Zone ⚡</h1>
-            <p class="highlight">Not a portfolio... a digital rebellion.</p>
+            <p class="highlight">Where creative design meets clean, reliable code.</p>
             <button onclick="changeBackground()">Switch Mode</button>
         </section>
+
         <section class="features-section fade-in">
             <div class="feature-card">
                 <i class="fas fa-bolt"></i>
-                <h3>Fast & Bold</h3>
-                <p>Quick, loud, unapologetic — just like my work.</p>
+                <h3>Fast & Efficient</h3>
+                <p>Web solutions that load fast, work smooth, and stand out.</p>
             </div>
             <div class="feature-card">
                 <i class="fas fa-mask"></i>
-                <h3>Dark Aesthetic</h3>
-                <p>Design that whispers chaos and vision beneath the surface.</p>
+                <h3>Modern Aesthetic</h3>
+                <p>Minimal, bold, and designed to reflect your unique identity.</p>
             </div>
             <div class="feature-card">
                 <i class="fas fa-code"></i>
-                <h3>Built with Code</h3>
-                <p>Raw, hand-written, every line made to reflect me.</p>
-            </div>
-        </section>
-        <section class="cta-section fade-in">
-            <p>Ready to see what Exiels1 can build? The storm's just starting.</p>
-            <button onclick="window.location.href='about.html'">Discover More</button>
-        </section>
-        
-        <section class="features-section fade-in">
-            <div class="feature-card">
-                <i class="fas fa-code"></i>
-                <h3>Web Dev in Progress</h3>
-                <p>Learning. Building. Breaking limits.</p>
-            </div>
-            <div class="feature-card">
-                <i class="fas fa-bolt"></i>
-                <h3>Dark Visionary</h3>
-                <p>Design fused with strategy and raw energy.</p>
-            </div>
-            <div class="feature-card">
-                <i class="fas fa-skull"></i>
-                <h3>Anti-Hero Energy</h3>
-                <p>Not defined by rules. Only results.</p>
+                <h3>Hand-Crafted Code</h3>
+                <p>Every line written with precision for performance and flexibility.</p>
             </div>
         </section>
 
         <section class="cta-section fade-in">
-            <p>⚠️ This isn’t your regular site. It's Exiels1 — raw, real, relentless.</p>
-            <button onclick="location.href='about.html'">Explore More</button>
+            <p>Discover how Phantom Zone brings bold ideas to life through design and code.</p>
+            <button onclick="window.location.href='about.html'">Learn More</button>
+        </section>
+
+        <section class="features-section fade-in">
+            <div class="feature-card">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Professional Development</h3>
+                <p>Responsive, scalable websites tailored to your needs.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-lightbulb"></i>
+                <h3>Creative Thinking</h3>
+                <p>Unique solutions that blend functionality with innovation.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Reliable & Secure</h3>
+                <p>Clean code and smart practices for a secure web presence.</p>
+            </div>
+        </section>
+
+        <section class="cta-section fade-in">
+            <p>⚡ Ready to collaborate? Let's build something remarkable together.</p>
+            <button onclick="location.href='contact.html'">Contact Me</button>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Exiels1. All rights reserved.</p>
+        <p>&copy; 2025 Phantom Zone. All rights reserved.</p>
     </footer>
 
 <script src="script.js"></script>
@@ -95,15 +97,15 @@
             setTimeout(() => document.getElementById("preloader").style.display = "none", 500);
         }, 1200);
     });
-        window.addEventListener('scroll', () => {
-            document.querySelectorAll('.fade-in').forEach(el => {
-                const top = el.getBoundingClientRect().top;
-                if (top < window.innerHeight - 50) {
-                    el.classList.add('fade-in-visible');
-                }
-            });
+    
+    window.addEventListener('scroll', () => {
+        document.querySelectorAll('.fade-in').forEach(el => {
+            const top = el.getBoundingClientRect().top;
+            if (top < window.innerHeight - 50) {
+                el.classList.add('fade-in-visible');
+            }
         });
-        
+    });
 </script>
 </body>
 </html>
