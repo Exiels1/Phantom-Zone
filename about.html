@@ -113,13 +113,13 @@
         }, 1200);
     });
     window.addEventListener('scroll', () => {
-      document.querySelectorAll('.fade-in').forEach(el => {
-          const top = el.getBoundingClientRect().top;
-          if (top < window.innerHeight - 50) {
-              el.classList.add('fade-in-visible');
-          }
-      });
-  });
+        document.querySelectorAll('.fade-in').forEach(el => {
+            const top = el.getBoundingClientRect().top;
+            if (top < window.innerHeight - 50) {
+                el.classList.add('fade-in-visible');
+            }
+        });
+      });      
 </script>
 </body>
 </html>
