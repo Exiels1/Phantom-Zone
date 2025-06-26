@@ -2,17 +2,101 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Our Projects | QuantumShade</title>
+    <title>Projects | QuantumShade</title>
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="icon" href="image/favicon.ico" sizes="any">
-    <meta name="description" content="Explore QuantumShade's latest projects — where innovation meets execution.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <meta name="description" content="Explore QuantumShade's latest projects — innovation meets bold execution.">
     <meta name="keywords" content="QuantumShade, Projects, Chatbox, Web Development, AI, Design">
     <meta name="author" content="QuantumShade">
 </head>
-<body>
-    <script>
+<body class="home-body" onload="greetUser()">
+
+<!-- Cookie Banner -->
+<div id="cookie-banner">
+    <p>We use cookies to improve your experience and analyze traffic. By clicking Accept, you agree to our terms.</p>
+    <div class="cookie-buttons">
+        <button id="accept-cookies">Accept</button>
+        <button id="decline-cookies">Decline</button>
+    </div>
+</div>
+
+<!-- Preloader -->
+<div id="preloader">
+    <div class="loader-content">
+        <img src="image/logo.png" alt="Loading..." class="loader-logo">
+        <p>⚡ Loading Projects... ⚡</p>
+    </div>
+</div>
+
+<header>
+    <nav>
+        <img src="logo1.svg" alt="QuantumShade Logo" class="site-logo">
+        <ul class="navbar">
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+            <li><a href="order.html"><i class="fas fa-calendar-check"></i> Book</a></li>
+            <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            <li><a href="project.html" class="active"><i class="fas fa-code"></i> Projects</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="projects-section fade-in">
+    <h1>💡 Our Featured Projects</h1>
+    <p class="highlight">Pushing boundaries. Building with vision.</p>
+
+    <div class="projects-grid">
+
+        <div class="project-card">
+            <i class="fas fa-comment-dots project-icon"></i>
+            <h3>Private Chatbox</h3>
+            <p>A fully functional, secure chat platform with user profiles, real-time messaging, and AI assistant integration.</p>
+            <a href="#" target="_blank" class="btn-primary">View Project</a>
+        </div>
+
+        <div class="project-card">
+            <i class="fas fa-globe project-icon"></i>
+            <h3>QuantumShade Website</h3>
+            <p>The official QuantumShade site — crafted with custom code to reflect bold design and technical excellence.</p>
+            <a href="index.html" class="btn-primary">Visit Site</a>
+        </div>
+
+        <div class="project-card">
+            <i class="fas fa-cogs project-icon"></i>
+            <h3>Custom Tools & Widgets</h3>
+            <p>Interactive tools and web utilities tailored to client needs. Stay tuned for the official launch.</p>
+            <button class="btn-disabled" disabled>Coming Soon</button>
+        </div>
+
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2025 QuantumShade. All rights reserved.</p>
+</footer>
+
+<script>
+    window.addEventListener("load", function() {
+        setTimeout(() => {
+            document.getElementById("preloader").style.opacity = "0";
+            setTimeout(() => document.getElementById("preloader").style.display = "none", 500);
+        }, 1200);
+    });
+
+    window.addEventListener('scroll', () => {
+        document.querySelectorAll('.fade-in').forEach(el => {
+            const top = el.getBoundingClientRect().top;
+            if (top < window.innerHeight - 50) {
+                el.classList.add('fade-in-visible');
+            }
+        });
+    });
+</script>
+
+<!-- Google Consent & Analytics -->
+<script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('consent', 'default', {
@@ -22,101 +106,14 @@
       'personalization_storage': 'denied',
       'security_storage': 'granted'
     });
-  </script>
-  
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RNTDPX3"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RNTDPX3"></script>
+<script>
     gtag('js', new Date());
     gtag('config', 'G-RNTDPX3');
-  </script>
-  <script>
     gtag('consent', 'update', {
       'ad_storage': 'granted',
       'analytics_storage': 'granted'
-    });
-  </script>
-    
-</head>
-<body class="home-body" onload="greetUser()">
-    <div id="cookie-banner">
-        <p>We use cookies to improve your experience & analyze traffic. By clicking Accept, you agree to our terms.</p>
-        <div class="cookie-buttons">
-            <button id="accept-cookies">Accept</button>
-            <button id="decline-cookies">Decline</button>
-        </div>
-    </div>
-    <!-- Preloader -->
-    <div id="preloader">
-        <div class="loader-content">
-            <img src="image/logo.png" alt="Loading..." class="loader-logo">
-            <p>⚡ Loading Projects... ⚡</p>
-        </div>
-    </div>
-
-    <header>
-        <nav>
-            <img src="logo1.svg" alt="QuantumShade Logo" class="site-logo">
-            <ul class="navbar">
-                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-                <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
-                <li><a href="order.html"><i class="fas fa-calendar-check"></i> Book</a></li>
-                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
-                <li><a href="project.html" class="active"><i class="fas fa-code"></i> Projects</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main class="projects-section fade-in">
-        <h1>💡 Our Featured Projects</h1>
-        <p class="highlight">Pushing boundaries. Building with vision.</p>
-
-        <div class="project-grid">
-
-            <div class="project-card">
-                <i class="fas fa-comment-dots"></i>
-                <h3>Private Chat-Box</h3>
-                <p>A fully functional, customizable chat application with login, profiles, and AI assistant integration.</p>
-                <a href="#" target="_blank" class="btn-primary">View Project</a>
-            </div>
-
-            <div class="project-card">
-                <i class="fas fa-globe"></i>
-                <h3>QuantumShade Website</h3>
-                <p>This very site — designed with bold visuals and built from raw code to showcase our work.</p>
-                <a href="index.html" class="btn-primary">Explore Site</a>
-            </div>
-
-            <div class="project-card">
-                <i class="fas fa-cogs"></i>
-                <h3>Custom Tools & Widgets</h3>
-                <p>Coming soon: Interactive web tools and utility widgets tailored to client needs.</p>
-                <button class="btn-disabled" disabled>In Progress</button>
-            </div>
-
-        </div>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 QuantumShade. All rights reserved.</p>
-    </footer>
-
-<script>
-    window.addEventListener("load", function() {
-        setTimeout(() => {
-            document.getElementById("preloader").style.opacity = "0";
-            setTimeout(() => document.getElementById("preloader").style.display = "none", 500);
-        }, 1200);
-    });
-    window.addEventListener('scroll', () => {
-        document.querySelectorAll('.fade-in').forEach(el => {
-            const top = el.getBoundingClientRect().top;
-            if (top < window.innerHeight - 50) {
-                el.classList.add('fade-in-visible');
-            }
-        });
     });
 </script>
 
