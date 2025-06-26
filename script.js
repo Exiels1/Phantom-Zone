@@ -27,3 +27,5 @@ function changeBackground() {
 
     mode = (mode + 1) % 4;
 }
+
+
