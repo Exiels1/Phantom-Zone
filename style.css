@@ -1157,3 +1157,49 @@ button, .contact-section button, .booking-form button {
       font-size: 40px;
   }
 }
+.slot-banner {
+  background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+  border: 1px solid rgba(255,255,255,0.1);
+  padding: 2rem;
+  border-radius: 16px;
+  text-align: center;
+  margin: 2rem auto;
+  width: 90%;
+  max-width: 700px;
+  box-shadow: 0 0 15px rgba(0,255,255,0.2);
+}
+
+.slot-banner h2 {
+  color: #00fff7;
+  font-size: 1.7rem;
+  margin-bottom: 0.5rem;
+}
+
+.slot-banner p {
+  color: #ccc;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.slot-status {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  font-weight: bold;
+  color: #999;
+}
+
+.slot-status .dot {
+  height: 12px;
+  width: 12px;
+  background-color: #555;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 0.4rem;
+  transition: 0.3s ease;
+}
+
+.slot-status .dot.active {
+  background-color: #00fff7;
+  box-shadow: 0 0 6px #00fff7;
+}
